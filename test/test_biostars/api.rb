@@ -1,11 +1,13 @@
-require 'minitest_helper'
+require './test/minitest_helper'
 
-class TestBiostars::Api < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Biostars::Api::VERSION
-  end
+class TestBiostars < Minitest::Test
+	context 'Biostars' do
+		should 'exist' do
+			assert Biostars::API
+		end
 
-  def test_it_does_something_useful
-    assert false
-  end
+		should 'have a valid version number' do
+			refute_nil Biostars::Api::VERSION
+		end
+	end
 end
