@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.biostars.org/api/user/0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Thu, 26 Feb 2015 21:38:31 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/user/0/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 26 Feb 2015 21:38:30 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/user/0/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not found
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Thu, 26 Feb 2015 21:38:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=63tm557dn4lm4yflsstjwwbohy36n975; expires=Thu, 12-Mar-2015 21:38:31
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{}"
+    http_version: 
+  recorded_at: Thu, 26 Feb 2015 21:38:31 GMT
+recorded_with: VCR 2.9.3

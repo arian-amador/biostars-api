@@ -5,7 +5,7 @@ require 'biostars/api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "biostars-api"
-  spec.version       = Biostars::Api::VERSION
+  spec.version       = Biostars::API::VERSION
   spec.authors       = ["Arian Amador"]
   spec.email         = ["arian@arianamador.com"]
 
@@ -31,7 +31,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "shoulda-context"
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
+  spec.add_development_dependency "guard"
+  spec.add_development_dependency "guard-minitest"
 
-  spec.add_dependency "faraday"
+  spec.add_dependency "httparty"
   spec.add_dependency "json"
 end

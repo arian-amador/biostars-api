@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.biostars.org/api/traffic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Thu, 26 Feb 2015 20:52:42 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/traffic/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 26 Feb 2015 20:52:42 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/traffic/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Thu, 26 Feb 2015 20:52:43 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=hl6zt3xncn5azg4kfcfvqu7twsc7uu8y; expires=Thu, 12-Mar-2015 20:52:43
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"date\": \"2015-02-26T14:52:43.353835\", \n    \"post_views_last_60_min\":
+        917, \n    \"timestamp\": 1424962363\n}"
+    http_version: 
+  recorded_at: Thu, 26 Feb 2015 20:52:42 GMT
+recorded_with: VCR 2.9.3
