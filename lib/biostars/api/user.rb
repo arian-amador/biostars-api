@@ -2,16 +2,12 @@ module Biostars
 	module API
 		class User
 
-			attr_reader :id, :name, :last_login, :joined_days_ago, :vote_count
+			attr_reader :id, :name, :last_login, :joined_days_ago, :vote_count, :date_joined
 
 			def initialize(attributes)
 				raise Biostars::UserError if attributes.empty? || attributes.nil?
 
-				@id = attributes["id"]
-				@name = attributes["name"]
-				@last_login = attributes["last_login"]
-				@joined_days_ago = attributes["joined_days_ago"]
-				@vote_count = attributes["vote_count"]
+				attributes.each { |k,v| instance_variable_set "@#{k}", v }
 			end
 		end
 	end

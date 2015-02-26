@@ -5,9 +5,7 @@ module Biostars
   		attr_reader :date, :post_views_last_60_min, :timestamp
 
   		def initialize(attributes)
-				@date = attributes['date']
-				@post_views_last_60_min = attributes['post_views_last_60_min']
-				@timestamp = attributes['timestamp']
+				attributes.each { |k,v| instance_variable_set "@#{k}", v }
   		end
   	end
 	end
