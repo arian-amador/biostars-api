@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 03:23:45 GMT
+      - Fri, 27 Feb 2015 22:13:03 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -36,7 +36,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 03:23:44 GMT
+  recorded_at: Fri, 27 Feb 2015 22:13:02 GMT
 - request:
     method: get
     uri: https://www.biostars.org/api/user/23/
@@ -58,7 +58,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 03:23:45 GMT
+      - Fri, 27 Feb 2015 22:13:03 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -70,13 +70,13 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - biostar2=op9scoj98kv34s31uuskq9cxrgsg16o9; expires=Fri, 13-Mar-2015 03:23:45
+      - biostar2=x5fiprwdwhwny7qwa0lmd642ltxdueuw; expires=Fri, 13-Mar-2015 22:13:03
         GMT; httponly; Max-Age=1209600; Path=/
     body:
       encoding: ASCII-8BIT
       string: "{\n    \"date_joined\": \"2010-01-18T21:43:55.253000+00:00\", \n    \"id\":
-        23, \n    \"joined_days_ago\": 1865, \n    \"last_login\": \"2015-02-26T18:08:55.381583+00:00\",
-        \n    \"name\": \"Giovanni M Dall'Olio\", \n    \"vote_count\": 3703\n}"
+        23, \n    \"joined_days_ago\": 1866, \n    \"last_login\": \"2015-02-27T21:01:58.260455+00:00\",
+        \n    \"name\": \"Giovanni M Dall'Olio\", \n    \"vote_count\": 3709\n}"
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 03:23:45 GMT
+  recorded_at: Fri, 27 Feb 2015 22:13:02 GMT
 recorded_with: VCR 2.9.3

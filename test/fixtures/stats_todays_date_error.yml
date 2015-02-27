@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.biostars.org/api/stats/date/2015/02/26
+    uri: https://www.biostars.org/api/stats/date/2015/02/27
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 03:46:27 GMT
+      - Fri, 27 Feb 2015 22:13:05 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -31,15 +31,15 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Location:
-      - https://www.biostars.org/api/stats/date/2015/02/26/
+      - https://www.biostars.org/api/stats/date/2015/02/27/
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 03:46:27 GMT
+  recorded_at: Fri, 27 Feb 2015 22:13:04 GMT
 - request:
     method: get
-    uri: https://www.biostars.org/api/stats/date/2015/02/26/
+    uri: https://www.biostars.org/api/stats/date/2015/02/27/
     body:
       encoding: US-ASCII
       string: ''
@@ -58,7 +58,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 03:46:38 GMT
+      - Fri, 27 Feb 2015 22:13:05 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -70,11 +70,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - biostar2=g1amf6gewdjxr9xnoduea1s445jzk0jm; expires=Fri, 13-Mar-2015 03:46:38
+      - biostar2=1q89qrstlfjlp2ca1lmj42klsqk20th7; expires=Fri, 13-Mar-2015 22:13:05
         GMT; httponly; Max-Age=1209600; Path=/
     body:
       encoding: ASCII-8BIT
       string: "{}"
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 03:46:38 GMT
+  recorded_at: Fri, 27 Feb 2015 22:13:04 GMT
 recorded_with: VCR 2.9.3

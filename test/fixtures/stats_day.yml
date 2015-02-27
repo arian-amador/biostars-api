@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 03:46:39 GMT
+      - Fri, 27 Feb 2015 22:15:04 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -36,7 +36,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 03:46:39 GMT
+  recorded_at: Fri, 27 Feb 2015 22:15:03 GMT
 - request:
     method: get
     uri: https://www.biostars.org/api/stats/day/5/
@@ -58,7 +58,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 03:46:40 GMT
+      - Fri, 27 Feb 2015 22:15:04 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -70,7 +70,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - biostar2=tvewahm4huo8sovpk1jhv6ll65cndj9p; expires=Fri, 13-Mar-2015 03:46:40
+      - biostar2=vyoxgumjg9mgr1x6imyfvgx2ojkdjqza; expires=Fri, 13-Mar-2015 22:15:04
         GMT; httponly; Max-Age=1209600; Path=/
     body:
       encoding: ASCII-8BIT
@@ -80,5 +80,163 @@ http_interactions:
         [], \n    \"questions\": 6, \n    \"timestamp\": 1254700800, \n    \"toplevel\":
         6, \n    \"users\": 10, \n    \"votes\": 0\n}"
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 03:46:39 GMT
+  recorded_at: Fri, 27 Feb 2015 22:15:03 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/user/10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Fri, 27 Feb 2015 22:15:05 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/user/10/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 27 Feb 2015 22:15:03 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/user/10/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Fri, 27 Feb 2015 22:15:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=z740pmyzo3m1g2w6r8zcni3wf9ju3vjs; expires=Fri, 13-Mar-2015 22:15:05
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"date_joined\": \"2009-10-05T21:44:30.853000+00:00\", \n    \"id\":
+        10, \n    \"joined_days_ago\": 1971, \n    \"last_login\": \"2013-04-01T13:09:47.639174+00:00\",
+        \n    \"name\": \"Biostar User\", \n    \"vote_count\": 36\n}"
+    http_version: 
+  recorded_at: Fri, 27 Feb 2015 22:15:04 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/user/11
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Fri, 27 Feb 2015 22:15:06 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/user/11/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 27 Feb 2015 22:15:04 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/user/11/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Fri, 27 Feb 2015 22:15:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=pdrd23sbhwc0coxk0m0zc1x02svkutuf; expires=Fri, 13-Mar-2015 22:15:06
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"date_joined\": \"2009-10-05T22:47:25.690000+00:00\", \n    \"id\":
+        11, \n    \"joined_days_ago\": 1971, \n    \"last_login\": \"2009-10-05T22:47:25.690000+00:00\",
+        \n    \"name\": \"Reka Albert\", \n    \"vote_count\": 0\n}"
+    http_version: 
+  recorded_at: Fri, 27 Feb 2015 22:15:05 GMT
 recorded_with: VCR 2.9.3

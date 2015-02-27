@@ -13,10 +13,10 @@ class TestBiostarsUser < Minitest::Test
 				user = Biostars::API::User.find(23)
 
 				assert_equal 23, user.id
-				assert_equal 1865, user.joined_days_ago
-				assert_equal "2015-02-26T18:08:55.381583+00:00", user.last_login
+				assert_equal 1866, user.joined_days_ago
+				assert_equal "2015-02-27T21:01:58.260455+00:00", user.last_login
 				assert_equal "Giovanni M Dall'Olio", user.name
-				assert_equal 3703, user.vote_count
+				assert_equal 3709, user.vote_count
 			end
 		end
 	end

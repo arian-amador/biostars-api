@@ -1,29 +1,27 @@
+$:.unshift File.expand_path('..', __FILE__)
+$:.unshift File.expand_path('../api', __FILE__)
+
 require 'httparty'
 require 'json'
 
-__LIB_DIR__ = File.expand_path(File.join(File.dirname(__FILE__), ".."))
-unless $LOAD_PATH.include?(__LIB_DIR__)
-  $LOAD_PATH.unshift(__LIB_DIR__)
-end
-
-require_relative "api/exceptions"
-require_relative "api/version"
-require_relative "api/traffic"
-require_relative "api/stats"
-require_relative "api/user"
-require_relative "api/post"
-require_relative "api/vote"
+require "api/exceptions"
+require "api/version"
+require "api/traffic"
+require "api/stats"
+require "api/user"
+require "api/post"
+require "api/vote"
 
 module Biostars
   module API
   	API_URL = 'https://www.biostars.org/api'
 
   	def self.traffic
-  		Biostars::API.find("traffic", Biostars::API::Traffic, Biostars::Error)
+  		Biostars::API.get("traffic", Biostars::API::Traffic, Biostars::Error)
   	end
 
   	private
-  		def self.find(url, klass, klass_error)
+  		def self.get(url, klass, klass_error)
   			response = HTTParty.get "#{API_URL}/#{url}"
 
 				if response.success?

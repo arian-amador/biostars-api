@@ -14,7 +14,7 @@ module Biostars
 			end
 			
 	  	def self.find(id)
-	  		Biostars::API.find("post/#{id}", self, Biostars::PostError)
+	  		Biostars::API.get("post/#{id}", self, Biostars::PostError)
 	  	end
 		end
 	end

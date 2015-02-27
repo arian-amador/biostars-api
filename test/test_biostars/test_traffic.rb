@@ -6,9 +6,9 @@ class TestBiostarsTraffic < Minitest::Test
 			VCR.use_cassette('traffic_data') do
 				traffic = Biostars::API.traffic
 
-				assert_equal '2015-02-26T21:23:49.665902', traffic.date
-				assert_equal 651, traffic.post_views_last_60_min
-				assert_equal 1424985829, traffic.timestamp
+				assert_equal '2015-02-27T16:13:01.804622', traffic.date
+				assert_equal 811, traffic.post_views_last_60_min
+				assert_equal 1425053581, traffic.timestamp
 			end
 		end
 	end

@@ -6,12 +6,12 @@ module Biostars
 
 			def initialize(attributes)
 				attributes.each do |k,v| 
-					instance_variable_set "@#{k}", v 
+					instance_variable_set "@#{k}", v unless v.nil?
 				end
 			end
 
 			def self.find(id)
-				Biostars::API.find("vote/#{id}", self, Biostars::VoteError)
+				Biostars::API.get("vote/#{id}", self, Biostars::VoteError)
 	  	end
 		end
 	end

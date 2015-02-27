@@ -76,20 +76,17 @@ class TestBiostarsStats < Minitest::Test
 					assert_equal 12, stats.users
 					assert_equal 0, stats.votes
 				end
-			end			
-
+			end		
+			
 			should 'default to yesterdays date and return a stats object' do
-				VCR.use_cassette('stats_defaults_yesterday') do
-					stats = Biostars::API::Stats.find_by_date
+				stats = Biostars::API::Stats.find_by_date
+				yesterday_iso8601 = DateTime.iso8601((Date.today - 1).to_s).to_s
 
-					assert_equal 35905, stats.answers
-					assert_equal 67606, stats.comments
-					assert_equal "2015-02-25T00:00:00", stats.date
-					assert_equal 21406, stats.questions
-					assert_equal 16301, stats.users
-					assert_equal 146350, stats.votes
-				end
-			end			
+				assert_equal yesterday_iso8601.split('+')[0], stats.date
+				assert stats.answers
+				assert stats.comments
+				assert stats.votes
+			end	
 		end
 	end
 end
