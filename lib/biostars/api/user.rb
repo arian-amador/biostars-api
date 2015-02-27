@@ -11,13 +11,7 @@ module Biostars
 			end
 
 			def self.find(id)
-	 			response = Biostars::API.getRequest "#{API_URL}/user/#{id}"
-
-				if response.success?
-				 new JSON.parse response.body
-				else
-					raise Biostars::UserError
-				end
+				Biostars::API.find("user/#{id}", self, Biostars::UserError)
 			end
 		end
 	end

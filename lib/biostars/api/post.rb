@@ -9,18 +9,12 @@ module Biostars
 
 			def initialize(attributes)
 				attributes.each do |k,v| 
-					instance_variable_set "@#{k}", v 
+					instance_variable_set("@#{k}", v) unless v.nil?
 				end
 			end
 			
 	  	def self.find(id)
-	 			response = Biostars::API.getRequest "#{API_URL}/post/#{id}"
-
-				if response.success?
-				 new JSON.parse response.body
-				else
-					raise Biostars::PostError
-				end
+	  		Biostars::API.find("post/#{id}", self, Biostars::PostError)
 	  	end
 		end
 	end

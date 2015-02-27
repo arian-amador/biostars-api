@@ -11,31 +11,22 @@ module Biostars
 				end
 			end
 
-			def self.find(url)
-	 			response = Biostars::API.getRequest url
-
-				if response.success?
-				 new JSON.parse response.body
-				else
-					raise Biostars::StatsError
-				end
-			end
-
 			def self.find_by_day(day=Date.today.day)
-				raise Biostars::StatsError unless day.is_a? Fixnum
+				raise Biostars::StatsError, "Expecting a Date Object" unless day.is_a? Fixnum
 
-				self.find "#{API_URL}/stats/day/#{day}"
+				Biostars::API.find("stats/day/#{day}", self, Biostars::StatsError)
 			end
 
-			def self.find_by_date(date=Date.today)
+			def self.find_by_date(date=Date.today-1)
 				raise Biostars::StatsError unless date.is_a? Date
 
-				self.find "%s/stats/date/%s/%s/%s" % [
-					API_URL,
+				url = "stats/date/%s/%s/%s" % [
 					date.year,
 					sprintf('%02d', date.month),
 					sprintf('%02d', date.day),
 				]
+
+				Biostars::API.find(url, self, Biostars::StatsError)
 			end
 		end
 	end

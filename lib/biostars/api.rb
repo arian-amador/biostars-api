@@ -18,9 +18,19 @@ module Biostars
   module API
   	API_URL = 'https://www.biostars.org/api'
 
+  	def self.traffic
+  		Biostars::API.find("traffic", Biostars::API::Traffic, Biostars::Error)
+  	end
+
   	private
-  		def self.getRequest(url)
-  			HTTParty.get url
+  		def self.find(url, klass, klass_error)
+  			response = HTTParty.get "#{API_URL}/#{url}"
+
+				if response.success?
+				  Object::const_get(klass.to_s).new(JSON.parse response.body)
+				else
+					raise klass_error
+				end
   		end
   end
 end

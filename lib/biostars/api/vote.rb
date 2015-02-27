@@ -11,13 +11,7 @@ module Biostars
 			end
 
 			def self.find(id)
-				response = Biostars::API.getRequest("#{API_URL}/vote/#{id}")
-				
-				if response.success?
-				 new JSON.parse response.body
-				else
-					raise Biostars::VoteError
-				end
+				Biostars::API.find("vote/#{id}", self, Biostars::VoteError)
 	  	end
 		end
 	end

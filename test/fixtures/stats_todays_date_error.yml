@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.biostars.org/api/stats/date/2009/10/06
+    uri: https://www.biostars.org/api/stats/date/2015/02/26
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 03:46:13 GMT
+      - Fri, 27 Feb 2015 03:46:27 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -31,15 +31,15 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Location:
-      - https://www.biostars.org/api/stats/date/2009/10/06/
+      - https://www.biostars.org/api/stats/date/2015/02/26/
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 03:46:13 GMT
+  recorded_at: Fri, 27 Feb 2015 03:46:27 GMT
 - request:
     method: get
-    uri: https://www.biostars.org/api/stats/date/2009/10/06/
+    uri: https://www.biostars.org/api/stats/date/2015/02/26/
     body:
       encoding: US-ASCII
       string: ''
@@ -52,13 +52,13 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not found
     headers:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 03:46:16 GMT
+      - Fri, 27 Feb 2015 03:46:38 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -70,15 +70,11 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - biostar2=sz2wr0x0ujap7glu8c648rs7kq96p0c7; expires=Fri, 13-Mar-2015 03:46:16
+      - biostar2=g1amf6gewdjxr9xnoduea1s445jzk0jm; expires=Fri, 13-Mar-2015 03:46:38
         GMT; httponly; Max-Age=1209600; Path=/
     body:
       encoding: ASCII-8BIT
-      string: "{\n    \"answers\": 9, \n    \"comments\": 2, \n    \"date\": \"2009-10-06T00:00:00\",
-        \n    \"new_posts\": [\n        13, \n        14, \n        15, \n        16\n
-        \   ], \n    \"new_users\": [\n        12, \n        13\n    ], \n    \"new_votes\":
-        [], \n    \"questions\": 7, \n    \"timestamp\": 1254787200, \n    \"toplevel\":
-        7, \n    \"users\": 12, \n    \"votes\": 0\n}"
+      string: "{}"
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 03:46:15 GMT
+  recorded_at: Fri, 27 Feb 2015 03:46:38 GMT
 recorded_with: VCR 2.9.3

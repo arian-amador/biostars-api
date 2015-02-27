@@ -15,6 +15,12 @@ class TestBiostarsStats < Minitest::Test
 				end
 			end
 
+			should 'raise StatsError with todays date' do
+				VCR.use_cassette('stats_todays_date_error') do
+					assert_raises(Biostars::StatsError) { Biostars::API::Stats.find_by_date Date.today }
+				end
+			end
+
 			should 'return stats object from day-0 to specified day' do
 				VCR.use_cassette('stats_day') do
 					stats = Biostars::API::Stats.find_by_day 5
@@ -69,6 +75,19 @@ class TestBiostarsStats < Minitest::Test
 					assert_equal 7, stats.questions
 					assert_equal 12, stats.users
 					assert_equal 0, stats.votes
+				end
+			end			
+
+			should 'default to yesterdays date and return a stats object' do
+				VCR.use_cassette('stats_defaults_yesterday') do
+					stats = Biostars::API::Stats.find_by_date
+
+					assert_equal 35905, stats.answers
+					assert_equal 67606, stats.comments
+					assert_equal "2015-02-25T00:00:00", stats.date
+					assert_equal 21406, stats.questions
+					assert_equal 16301, stats.users
+					assert_equal 146350, stats.votes
 				end
 			end			
 		end
