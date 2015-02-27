@@ -17,5 +17,10 @@ require_relative "api/vote"
 module Biostars
   module API
   	API_URL = 'https://www.biostars.org/api'
+
+  	private
+  		def self.getRequest(url)
+  			HTTParty.get url
+  		end
   end
 end

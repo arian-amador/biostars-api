@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Thu, 26 Feb 2015 20:52:42 GMT
+      - Fri, 27 Feb 2015 03:23:49 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -36,7 +36,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Thu, 26 Feb 2015 20:52:42 GMT
+  recorded_at: Fri, 27 Feb 2015 03:23:48 GMT
 - request:
     method: get
     uri: https://www.biostars.org/api/traffic/
@@ -58,7 +58,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Thu, 26 Feb 2015 20:52:43 GMT
+      - Fri, 27 Feb 2015 03:23:49 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -70,12 +70,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - biostar2=hl6zt3xncn5azg4kfcfvqu7twsc7uu8y; expires=Thu, 12-Mar-2015 20:52:43
+      - biostar2=egjhe2kzg1cxm6oexp8zd02u4uiziflc; expires=Fri, 13-Mar-2015 03:23:49
         GMT; httponly; Max-Age=1209600; Path=/
     body:
       encoding: ASCII-8BIT
-      string: "{\n    \"date\": \"2015-02-26T14:52:43.353835\", \n    \"post_views_last_60_min\":
-        917, \n    \"timestamp\": 1424962363\n}"
+      string: "{\n    \"date\": \"2015-02-26T21:23:49.665902\", \n    \"post_views_last_60_min\":
+        651, \n    \"timestamp\": 1424985829\n}"
     http_version: 
-  recorded_at: Thu, 26 Feb 2015 20:52:42 GMT
+  recorded_at: Fri, 27 Feb 2015 03:23:49 GMT
 recorded_with: VCR 2.9.3

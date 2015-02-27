@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 01:07:18 GMT
+      - Fri, 27 Feb 2015 03:23:47 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -36,7 +36,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 01:07:18 GMT
+  recorded_at: Fri, 27 Feb 2015 03:23:47 GMT
 - request:
     method: get
     uri: https://www.biostars.org/api/vote/21/
@@ -58,7 +58,7 @@ http_interactions:
       Server:
       - nginx/1.1.19
       Date:
-      - Fri, 27 Feb 2015 01:07:18 GMT
+      - Fri, 27 Feb 2015 03:23:48 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -70,7 +70,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Set-Cookie:
-      - biostar2=b47sdv7sfkxbcup0fugri58eu0ck3384; expires=Fri, 13-Mar-2015 01:07:18
+      - biostar2=jzyrloyyqxjxl3z7hcugrqqhvtfknxpg; expires=Fri, 13-Mar-2015 03:23:48
         GMT; httponly; Max-Age=1209600; Path=/
     body:
       encoding: ASCII-8BIT
@@ -78,5 +78,5 @@ http_interactions:
         \"2014-04-14T02:56:45.240534+00:00\", \n    \"id\": 21, \n    \"post_id\":
         26, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
     http_version: 
-  recorded_at: Fri, 27 Feb 2015 01:07:18 GMT
+  recorded_at: Fri, 27 Feb 2015 03:23:48 GMT
 recorded_with: VCR 2.9.3

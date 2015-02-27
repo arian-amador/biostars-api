@@ -4,9 +4,14 @@ class TestBiostarsStats < Minitest::Test
 	context 'Stats' do
 		describe 'Stats class' do
 
-			should 'raise StatsError on invalid stats' do
-				VCR.use_cassette('stats_day_error') do
-					assert_raises(Biostars::StatsError) { Biostars::API::Stats.find_by_day 1000000 }
+			should 'raise StatsError on invalid requests' do
+				assert_raises(Biostars::StatsError) { Biostars::API::Stats.find_by_day 'a'}
+				assert_raises(Biostars::StatsError) { Biostars::API::Stats.find_by_date 'asdf' }
+			end
+
+			should 'raise StatsError with future dates' do
+				VCR.use_cassette('stats_future_date_error') do
+					assert_raises(Biostars::StatsError) { Biostars::API::Stats.find_by_date Date.new(2020,01,01)}
 				end
 			end
 
@@ -28,6 +33,26 @@ class TestBiostarsStats < Minitest::Test
 					assert_equal 0, stats.votes
 				end
 			end
+
+			should 'return stats object even with pre internet dates' do
+				VCR.use_cassette('stats_really_pre_internet_date') do
+					stats = Biostars::API::Stats.find_by_date Date.new(1982,11,01)
+
+					assert_equal 0, stats.answers
+					assert_equal 0, stats.comments
+					assert_equal "1982-11-01T00:00:00", stats.date
+					assert_equal [], stats.new_posts
+					assert_equal 0, stats.new_posts.count
+					assert_equal [], stats.new_users
+					assert_equal 0, stats.new_users.count
+					assert_equal [], stats.new_votes
+					assert_equal 0, stats.new_votes.count
+					assert_equal 0, stats.questions
+					assert_equal 0, stats.users
+					assert_equal 0, stats.votes
+				end
+			end
+
 			should 'return stats object for a specific date' do
 				VCR.use_cassette('stats_date') do
 					stats = Biostars::API::Stats.find_by_date Date.new(2009,10,06)

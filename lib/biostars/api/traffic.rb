@@ -5,11 +5,16 @@ module Biostars
   		attr_reader :date, :post_views_last_60_min, :timestamp
 
   		def initialize
-  			response = HTTParty.get "#{API_URL}/traffic"
-  			attributes = JSON.parse response.body
-				attributes.each { |k,v| instance_variable_set "@#{k}", v }
-  		end
+        response = Biostars::API.getRequest "#{API_URL}/traffic"
 
+        if response.success?
+          JSON.parse(response.body).each do |k,v|
+            instance_variable_set "@#{k}", v
+          end
+        else
+          raise Biostars::Error
+        end
+  		end
   	end
 	end
 end

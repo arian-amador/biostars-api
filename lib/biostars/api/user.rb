@@ -5,14 +5,19 @@ module Biostars
 			attr_reader :id, :name, :last_login, :joined_days_ago, :vote_count, :date_joined
 
 			def initialize(attributes)
-				raise Biostars::UserError if attributes.empty? || attributes.nil?
-
-				attributes.each { |k,v| instance_variable_set "@#{k}", v }
+				attributes.each do |k,v| 
+					instance_variable_set "@#{k}", v 
+				end
 			end
 
 			def self.find(id)
-				response = HTTParty.get "#{API_URL}/user/#{id}"
-				new JSON.parse response.body
+	 			response = Biostars::API.getRequest "#{API_URL}/user/#{id}"
+
+				if response.success?
+				 new JSON.parse response.body
+				else
+					raise Biostars::UserError
+				end
 			end
 		end
 	end

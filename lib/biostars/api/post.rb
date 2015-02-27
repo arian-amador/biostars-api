@@ -8,14 +8,19 @@ module Biostars
 				:thread_score, :title, :type, :type_id, :url, :view_count, :vote_count, :xhtml
 
 			def initialize(attributes)
-				raise Biostars::PostError if attributes.empty? || attributes.nil?
-
-				attributes.each { |k,v| instance_variable_set "@#{k}", v }
+				attributes.each do |k,v| 
+					instance_variable_set "@#{k}", v 
+				end
 			end
 			
 	  	def self.find(id)
-	  		response = HTTParty.get "#{API_URL}/post/#{id}"
-	  		new JSON.parse response.body 
+	 			response = Biostars::API.getRequest "#{API_URL}/post/#{id}"
+
+				if response.success?
+				 new JSON.parse response.body
+				else
+					raise Biostars::PostError
+				end
 	  	end
 		end
 	end

@@ -6,32 +6,37 @@ module Biostars
 				:questions, :timestamp, :toplevel, :users, :votes
 
 			def initialize(attributes)
-				raise Biostars::StatsError if attributes.empty? || attributes.nil?
+				attributes.each do |k,v| 
+					instance_variable_set "@#{k}", v 
+				end
+			end
 
-				attributes.each { |k,v| instance_variable_set "@#{k}", v }
+			def self.find(url)
+	 			response = Biostars::API.getRequest url
+
+				if response.success?
+				 new JSON.parse response.body
+				else
+					raise Biostars::StatsError
+				end
 			end
 
 			def self.find_by_day(day=Date.today.day)
-				response = getRequest "stats/day/#{day}"
-				new JSON.parse response.body
+				raise Biostars::StatsError unless day.is_a? Fixnum
+
+				self.find "#{API_URL}/stats/day/#{day}"
 			end
 
 			def self.find_by_date(date=Date.today)
+				raise Biostars::StatsError unless date.is_a? Date
 
-				url = "stats/date/%s/%s/%s" % [
+				self.find "%s/stats/date/%s/%s/%s" % [
+					API_URL,
 					date.year,
 					sprintf('%02d', date.month),
 					sprintf('%02d', date.day),
 				]
-
-				response = getRequest url
-				new JSON.parse response.body
 			end
-
-			private
-				def self.getRequest(endpoint)
-					HTTParty.get "#{API_URL}/#{endpoint}"
-				end
 		end
 	end
 end
