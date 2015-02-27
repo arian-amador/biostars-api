@@ -9,32 +9,13 @@ end
 require_relative "api/exceptions"
 require_relative "api/version"
 require_relative "api/traffic"
+require_relative "api/stats"
 require_relative "api/user"
 require_relative "api/post"
+require_relative "api/vote"
 
 module Biostars
   module API
   	API_URL = 'https://www.biostars.org/api'
-
-  	def self.traffic
-  		response = get 'traffic'
-			Traffic.new JSON.parse(response.body)
-  	end
-
-  	def self.user(id)
-  		response = get "user/#{id}"
-			User.new JSON.parse(response.body)
-  	end
-
-  	def self.post(id)
-  		response = get "post/#{id}"
-  		Post.new JSON.parse(response.body)
-  	end
-
-  	private
-
-  		def self.get(endpoint)
-  			HTTParty.get("#{API_URL}/#{endpoint}")
-  		end
   end
 end

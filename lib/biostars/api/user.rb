@@ -9,6 +9,11 @@ module Biostars
 
 				attributes.each { |k,v| instance_variable_set "@#{k}", v }
 			end
+
+			def self.find(id)
+				response = HTTParty.get "#{API_URL}/user/#{id}"
+				new JSON.parse response.body
+			end
 		end
 	end
 end

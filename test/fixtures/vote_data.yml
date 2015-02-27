@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/21
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Fri, 27 Feb 2015 01:07:18 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/21/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 27 Feb 2015 01:07:18 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/21/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Fri, 27 Feb 2015 01:07:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=b47sdv7sfkxbcup0fugri58eu0ck3384; expires=Fri, 13-Mar-2015 01:07:18
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Zhaorong\", \n    \"author_id\": 14, \n    \"date\":
+        \"2014-04-14T02:56:45.240534+00:00\", \n    \"id\": 21, \n    \"post_id\":
+        26, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Fri, 27 Feb 2015 01:07:18 GMT
+recorded_with: VCR 2.9.3
