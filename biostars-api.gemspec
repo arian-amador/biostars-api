@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.summary       = %q{Gem wrapping biostars.org public API}
-  spec.description   = %q{Gem wrapping biostars.org public API}
+  spec.description   = %q{Gem wrapping biostars.org public API allowing post, user, and other site data.}
   spec.homepage      = "https://www.github.com/arian-amador/biostars-api"
   spec.license       = "MIT"
 
@@ -25,14 +25,14 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.8"
   spec.add_development_dependency "rake", "~> 10.0"
   
-  spec.add_development_dependency "minitest"
-  spec.add_development_dependency "minitest-reporters"
-  spec.add_development_dependency "shoulda-context"
-  spec.add_development_dependency "guard"
-  spec.add_development_dependency "guard-minitest"
-  spec.add_development_dependency "vcr"
-  spec.add_development_dependency "webmock"
+  spec.add_development_dependency 'minitest', '~> 5.5', '>= 5.5.1'
+  spec.add_development_dependency 'minitest-reporters', '~> 1.0', '>= 1.0.11'
+  spec.add_development_dependency "shoulda-context", '~> 1.2', '>= 1.2.1'
+  spec.add_development_dependency "guard", '~> 2.12', '>= 2.12.4'
+  spec.add_development_dependency "guard-minitest", '~> 2.4', '>= 2.4.4'
+  spec.add_development_dependency "vcr", '~> 2.9', '>= 2.9.3'
+  spec.add_development_dependency "webmock", '~> 1.20', '>= 1.20.4'
 
-  spec.add_dependency "httparty"
-  spec.add_dependency "json"
+  spec.add_dependency "httparty", "~> 0.13.3"
+  spec.add_dependency "json", '~> 1.8', '>= 1.8.2'
 end
