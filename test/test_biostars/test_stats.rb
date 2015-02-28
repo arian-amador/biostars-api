@@ -16,9 +16,7 @@ class TestBiostarsStats < Minitest::Test
 			end
 
 			should 'raise StatsError with todays date' do
-				VCR.use_cassette('stats_todays_date_error') do
-					assert_raises(Biostars::StatsError) { Biostars::API::Stats.find_by_date Date.today }
-				end
+				assert_raises(Biostars::StatsError) { Biostars::API::Stats.find_by_date Date.today }
 			end
 
 			should 'return stats object from day-0 to specified day' do
@@ -77,17 +75,17 @@ class TestBiostarsStats < Minitest::Test
 					assert_equal 0, stats.votes
 				end
 			end
-						
-			# FWIW: This also tests method Biostars::API::Stats.latest
-			should 'default to yesterdays date and return a stats object' do
-				stats = Biostars::API::Stats.find_by_date
-				yesterday_iso8601 = DateTime.iso8601((Date.today - 1).to_s).to_s
 
-				assert_equal yesterday_iso8601.split('+')[0], stats.date
-				assert stats.answers
-				assert stats.comments
-				assert stats.votes
-			end
+			# # FWIW: This also tests method Biostars::API::Stats.latest
+			# should 'default to yesterdays date and return a stats object' do
+			# 	stats = Biostars::API::Stats.find_by_date
+			# 	yesterday_iso8601 = DateTime.iso8601((Date.today - 1).to_s).to_s
+
+			# 	assert_equal yesterday_iso8601.split('+')[0], stats.date
+			# 	assert stats.answers
+			# 	assert stats.comments
+			# 	assert stats.votes
+			# end
 
 			should 'return an Array of Users for specific date' do
 				VCR.use_cassette('stats_all_users') do
