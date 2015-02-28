@@ -14,6 +14,7 @@ module Biostars
       # @return [Fixnum] current date unix epoch time format.
       attr_reader :timestamp
 
+      # Instantiate the Biostars::API::Traffic.
   		def initialize(attributes)
         attributes.each do |k,v| 
           instance_variable_set "@#{k}", v unless v.nil?

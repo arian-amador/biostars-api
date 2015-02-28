@@ -82,6 +82,8 @@ module Biostars
 
       # @return [String] content.
       attr_reader :xhtml
+
+            # Instantiate the Biostars::API::Post.
             def initialize(attributes)
 			attributes.each do |k,v| 
 				instance_variable_set("@#{k}", v) unless v.nil?

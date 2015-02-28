@@ -26,6 +26,7 @@ module Biostars
 			# @return [Fixnum] type's identifier for this vote.
 			attr_reader :type_id
 
+			# Instantiate the Biostars::API::Vote.
 			def initialize(attributes)
 				attributes.each do |k,v| 
 					instance_variable_set "@#{k}", v unless v.nil?

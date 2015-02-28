@@ -23,6 +23,7 @@ module Biostars
 			# @return [Fixnum] the number of votes given by the user.
 			attr_reader :vote_count
 
+			# Instantiate the Biostars::API::User.
 			def initialize(attributes)
 				attributes.each do |k,v| 
 					instance_variable_set "@#{k}", v unless v.nil?

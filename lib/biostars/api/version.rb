@@ -1,6 +1,6 @@
 module Biostars
   module API
-  	# Biostars::API Version
-    VERSION = "0.1.2"
+  	# Biostars::API Gem version.
+    VERSION = "0.1.3"
   end
 end
