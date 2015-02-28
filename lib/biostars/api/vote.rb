@@ -1,5 +1,8 @@
 module Biostars
 	module API
+
+		# General info about a vote.
+		# @author Arian Amador <arian@arianamador.com>
 		class Vote
 
 			# @return [String] author name.

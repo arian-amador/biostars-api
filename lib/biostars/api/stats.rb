@@ -1,5 +1,9 @@
 module Biostars
 	module API
+
+		# Statistics as of the Nth day after day-0 (the day of the first ever post) or
+		# statistics as of the given date.
+		# @author Arian Amador <arian@arianamador.com>
 		class Stats
 
       # @return [Fixnum] total number of answers as of the given day/date.
@@ -90,16 +94,18 @@ module Biostars
 
 				# Statistics as of the given date.
 				#
-				# @param date [Date] Date object for specific date.
+				# @param year [Fixnum] year to search for
+				# @param month [Fixnum] month to search for
+				# @param day [Fixnum] day to search for
 				# @return [Stats] returns a Stats object.
-				# @raise [Biostars::StatsError] if the date passed is not a valid Date.
-				def find_by_date(date=Date.today-1)
-					raise Biostars::StatsError unless date.is_a? Date
+				# @raise [Biostars::StatsError] if the variables passed are not valid Fixnum
+				def find_by_date(year=Date.today.year, month=Date.today.month, day=(Date.today.day-1))
+					raise Biostars::StatsError unless year.is_a?(Fixnum) || month.is_a?(Fixnum) || day.is_a?(Fixnum)
 
 					url = "stats/date/%s/%s/%s" % [
-						date.year,
-						sprintf('%02d', date.month),
-						sprintf('%02d', date.day),
+						year,
+						sprintf('%02d', month),
+						sprintf('%02d', day),
 					]
 
 					find url

@@ -50,7 +50,7 @@ latest_votes = latest_info.all_votes
 ## Documentation
 
 * API - https://www.biostars.org/info/api/
-* Rubydoc - http://www.rubydoc.info/github/arian-amador/biostars-api
+* Rubydoc - http://www.rubydoc.info/github/arian-amador/biostars-api/API
 
 ## Contributing
 

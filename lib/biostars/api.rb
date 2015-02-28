@@ -12,7 +12,14 @@ require "api/user"
 require "api/post"
 require "api/vote"
 
+# API wrapper for https://www.biostars.org public API
+# @see https://www.biostars.org/info/api/
+# @author Arian Amador <arian@arianamador.com>
 module Biostars
+
+  # API wrapper for https://www.biostars.org public API
+  # @see https://www.biostars.org/info/api/
+  # @author Arian Amador <arian@arianamador.com>
   module API
 
     # Used for API requests

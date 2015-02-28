@@ -1,6 +1,10 @@
 module Biostars
 	module API
+
+		# General info about a user.
+		# @author Arian Amador <arian@arianamador.com>
 		class User
+			
 			# @return [String] the date the user joined the website, as the number of days ago
 			attr_reader :date_joined 
 

@@ -1,5 +1,8 @@
 module Biostars
 	module API
+
+    # Number of post views over the last 60 min filtered by unique IPs.
+    # @author Arian Amador <arian@arianamador.com>
   	class Traffic
 
       # @return [String] the current date, ISO 8601 format.

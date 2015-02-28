@@ -1,5 +1,8 @@
 module Biostars
   module API
+
+    # General info about a post.
+    # @author Arian Amador <arian@arianamador.com>
     class Post
 
       # @return [Fixnum] number of answers.
