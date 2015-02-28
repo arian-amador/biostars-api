@@ -1,3 +1,7 @@
+[![Gem Version](https://badge.fury.io/rb/biostars-api.svg)](http://badge.fury.io/rb/biostars-api)
+[![Build Status](https://travis-ci.org/arian-amador/biostars-api.svg?style=flat)](https://travis-ci.org/arian-amador/biostars-api)
+[![Inline docs ](https://inch-ci.org/github/arian-amador/biostars-api.svg?branch=master)](https://inch-ci.org/github/arian-amador/biostars-api)
+
 # Biostars::Api
 
 A wrapper for the [Biostars.org](https://www.biostars.org/) public API.
