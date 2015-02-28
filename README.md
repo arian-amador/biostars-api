@@ -53,7 +53,7 @@ latest_votes = latest_info.all_votes
 
 ## Contributing
 
-1. Fork it ( https://github.com/arianamador/biostars-api/fork )
+1. Fork it ( https://github.com/arian-amador/biostars-api/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

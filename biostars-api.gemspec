@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Gem wrapping biostars.org public API}
   spec.description   = %q{Gem wrapping biostars.org public API}
-  spec.homepage      = "https://www.github.com/arianamador/biostars-api"
+  spec.homepage      = "https://www.github.com/arian-amador/biostars-api"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
