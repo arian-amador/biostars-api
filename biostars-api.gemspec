@@ -1,6 +1,6 @@
 # coding: utf-8
 $:.unshift File.expand_path('../lib', __FILE__)
-require 'biostars/api'
+require 'biostars/api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "biostars-api"
@@ -33,6 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr", '~> 2.9', '>= 2.9.3'
   spec.add_development_dependency "webmock", '~> 1.20', '>= 1.20.4'
 
-  spec.add_dependency "httparty", "~> 0"
+  spec.add_dependency "httparty", "~> 0.13.3"
   spec.add_dependency "json", '~> 1.8', '>= 1.8.2'
 end
