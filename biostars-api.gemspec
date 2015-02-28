@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.summary       = %q{Gem wrapping biostars.org public API}
-  spec.description   = %q{Gem wrapping biostars.org public API allowing post, user, and other site data.}
+  spec.description   = %q{Gem wrapping biostars.org public API}
   spec.homepage      = "https://www.github.com/arian-amador/biostars-api"
   spec.license       = "MIT"
 
