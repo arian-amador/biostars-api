@@ -85,7 +85,7 @@ module Biostars
 				def find_by_day(day=Date.today.day)
 					raise Biostars::StatsError, "Expecting a Date Object" unless day.is_a? Fixnum
 
-					Biostars::API.get("stats/day/#{day}", self, Biostars::StatsError)
+					find "stats/day/#{day}"
 				end
 
 				# Statistics as of the given date.
@@ -102,8 +102,17 @@ module Biostars
 						sprintf('%02d', date.day),
 					]
 
-					Biostars::API.get(url, self, Biostars::StatsError)
+					find url
 				end
+
+				private
+
+					# Used to call the main HTTParty get but we also don't want anyone
+					# other that the class methods to call it.
+					def find(url)
+						attributes = Biostars::API.get(url)
+						attributes ? new(attributes) : raise(Biostars::StatsError)
+					end
 			end
 		end
 	end

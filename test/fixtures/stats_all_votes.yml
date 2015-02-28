@@ -1,0 +1,5903 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.biostars.org/api/stats/date/2014/12/30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:14 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/stats/date/2014/12/30/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:12 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/stats/date/2014/12/30/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:14 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=v3x8nhvdoehcehk4w79dhf0dzmqwc8mt; expires=Sat, 14-Mar-2015 03:59:14
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"answers\": 34193, \n    \"comments\": 63607, \n    \"date\":
+        \"2014-12-30T00:00:00\", \n    \"new_posts\": [\n        125221, \n        125222,
+        \n        125223, \n        125224, \n        125225, \n        125226, \n
+        \       125227, \n        125228, \n        125229, \n        125230, \n        125231,
+        \n        125232, \n        125233, \n        125234, \n        125235, \n
+        \       125236, \n        125237, \n        125238, \n        125239, \n        125240,
+        \n        125241, \n        125242, \n        125243, \n        125244, \n
+        \       125245, \n        125246, \n        125247, \n        125248, \n        125249,
+        \n        125250, \n        125251, \n        125252, \n        125253, \n
+        \       125254, \n        125255, \n        125256, \n        125257, \n        125258,
+        \n        125259, \n        125260, \n        125261, \n        125262, \n
+        \       125263, \n        125264, \n        125265, \n        125266, \n        125267,
+        \n        125268, \n        125269, \n        125270, \n        125271, \n
+        \       125272, \n        125273, \n        125274, \n        125275, \n        125276,
+        \n        125277, \n        125278, \n        125279, \n        125280, \n
+        \       125281, \n        125282, \n        125283, \n        125284, \n        125285,
+        \n        125286, \n        125287, \n        125288, \n        125289, \n
+        \       125290, \n        125291, \n        125292, \n        125293, \n        125294,
+        \n        125295, \n        125296, \n        125297, \n        125298, \n
+        \       125299, \n        125300, \n        125301, \n        125302, \n        125303,
+        \n        125304, \n        125305, \n        125306, \n        125307, \n
+        \       125308, \n        125309, \n        125310, \n        125311, \n        125312,
+        \n        125313, \n        125314, \n        125315, \n        125316, \n
+        \       125317, \n        125318, \n        125319, \n        125320, \n        125321,
+        \n        125322, \n        125323, \n        125324, \n        125325, \n
+        \       125326, \n        125327, \n        125329, \n        125330, \n        125331,
+        \n        125333, \n        125334\n    ], \n    \"new_users\": [\n        15484,
+        \n        15485, \n        15487, \n        15483, \n        15489, \n        15488,
+        \n        15490, \n        15486, \n        15492, \n        15493, \n        15491,
+        \n        15494\n    ], \n    \"new_votes\": [\n        143453, \n        143454,
+        \n        143455, \n        143456, \n        143457, \n        143458, \n
+        \       143459, \n        143460, \n        143461, \n        143462, \n        143463,
+        \n        143464, \n        143465, \n        143466, \n        143467, \n
+        \       143468, \n        143469, \n        143470, \n        143471, \n        143472,
+        \n        143473, \n        143474, \n        143475, \n        143476, \n
+        \       143477, \n        143478, \n        143479, \n        143481, \n        143482,
+        \n        143484, \n        143485, \n        143486, \n        143487, \n
+        \       143488, \n        143489, \n        143490, \n        143491, \n        143492,
+        \n        143493, \n        143494, \n        143495, \n        143496, \n
+        \       143497, \n        143498, \n        143499, \n        143501, \n        143502,
+        \n        143503, \n        143504, \n        143506, \n        143507, \n
+        \       143508, \n        143509, \n        143510, \n        143511, \n        143512,
+        \n        143513, \n        143514, \n        143515, \n        143516, \n
+        \       143518, \n        143520, \n        143521, \n        143522, \n        143523,
+        \n        143524, \n        143525, \n        143526, \n        143527, \n
+        \       143529, \n        143532, \n        143533, \n        143534\n    ],
+        \n    \"questions\": 20121, \n    \"timestamp\": 1419897600, \n    \"toplevel\":
+        21443, \n    \"users\": 15259, \n    \"votes\": 141885\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:12 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143453
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:15 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143453/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:13 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143453/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:15 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=9qsonc3gj3hbadfgjfg9susovcxzsmaf; expires=Sat, 14-Mar-2015 03:59:15
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"marina.v.yurieva\", \n    \"author_id\": 11909,
+        \n    \"date\": \"2014-12-30T06:21:48.326766+00:00\", \n    \"id\": 143453,
+        \n    \"post_id\": 125221, \n    \"type\": \"Upvote\", \n    \"type_id\":
+        0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:13 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143454
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:16 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143454/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:14 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143454/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:17 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=qxh6e2qftidis4s7lhi4cmdyi3yp9lnk; expires=Sat, 14-Mar-2015 03:59:17
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Pgibas\", \n    \"author_id\": 4179, \n    \"date\":
+        \"2014-12-30T07:36:15.269296+00:00\", \n    \"id\": 143454, \n    \"post_id\":
+        125187, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:14 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143455
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:18 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143455/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:15 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143455/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=h2p2v3gd1e95m661q1vhnljtp206wcf7; expires=Sat, 14-Mar-2015 03:59:18
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"CikAlal\", \n    \"author_id\": 13604, \n    \"date\":
+        \"2014-12-30T08:37:14.806863+00:00\", \n    \"id\": 143455, \n    \"post_id\":
+        123755, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:16 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143456
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:18 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143456/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:16 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143456/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=a2tnfd1y7mraf5ktzwei3phoxsx1v8ni; expires=Sat, 14-Mar-2015 03:59:19
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"zbnh\", \n    \"author_id\": 14414, \n    \"date\":
+        \"2014-12-30T08:47:42.569710+00:00\", \n    \"id\": 143456, \n    \"post_id\":
+        125046, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:17 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143457
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:19 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143457/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:17 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143457/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=1586ttp2yjyj8vgnq4uv7uilwvsk7rga; expires=Sat, 14-Mar-2015 03:59:25
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Govardhan Anande\", \n    \"author_id\": 15466,
+        \n    \"date\": \"2014-12-30T10:37:03.617786+00:00\", \n    \"id\": 143457,
+        \n    \"post_id\": 125221, \n    \"type\": \"Upvote\", \n    \"type_id\":
+        0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:23 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143458
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:25 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143458/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:23 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143458/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=oeg0jrpln87wft3lu4z52gnq9a9qu2gh; expires=Sat, 14-Mar-2015 03:59:26
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"RamRS\", \n    \"author_id\": 8494, \n    \"date\":
+        \"2014-12-30T12:25:00.018167+00:00\", \n    \"id\": 143458, \n    \"post_id\":
+        125234, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:24 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143459
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:26 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143459/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:24 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143459/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=q04hkvsjcqm9mgumml3f38a2upbemik2; expires=Sat, 14-Mar-2015 03:59:32
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Dan Gaston\", \n    \"author_id\": 2193, \n    \"date\":
+        \"2014-12-30T12:55:38.477371+00:00\", \n    \"id\": 143459, \n    \"post_id\":
+        115050, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:29 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143460
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:32 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143460/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:30 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143460/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=7fvnhvum31vgnwdxu1i3ci964nyq27cv; expires=Sat, 14-Mar-2015 03:59:32
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Dan Gaston\", \n    \"author_id\": 2193, \n    \"date\":
+        \"2014-12-30T13:01:57.437969+00:00\", \n    \"id\": 143460, \n    \"post_id\":
+        123752, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:30 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143461
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:33 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143461/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:31 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143461/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:34 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=jebq5emtujgcit8kji4c7ib83cck5bfi; expires=Sat, 14-Mar-2015 03:59:34
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Dan Gaston\", \n    \"author_id\": 2193, \n    \"date\":
+        \"2014-12-30T13:01:58.339608+00:00\", \n    \"id\": 143461, \n    \"post_id\":
+        123749, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:32 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143462
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:34 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143462/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:32 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143462/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=86ti3z8yiepsvkbgttfkn9g9d1pj8iiy; expires=Sat, 14-Mar-2015 03:59:35
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"epistatic\", \n    \"author_id\": 5321, \n    \"date\":
+        \"2014-12-30T13:13:47.922054+00:00\", \n    \"id\": 143462, \n    \"post_id\":
+        118180, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:33 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143463
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:35 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143463/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:33 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143463/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=k6ktkfbl8ai60rik6afac62yvk781rra; expires=Sat, 14-Mar-2015 03:59:41
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"RamRS\", \n    \"author_id\": 8494, \n    \"date\":
+        \"2014-12-30T13:40:03.999961+00:00\", \n    \"id\": 143463, \n    \"post_id\":
+        125248, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:39 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143464
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:41 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143464/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:39 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143464/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:47 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=ucwx2k2eiwqe4lo563cxrl7crvb373fi; expires=Sat, 14-Mar-2015 03:59:47
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Ritvik\", \n    \"author_id\": 8804, \n    \"date\":
+        \"2014-12-30T13:40:13.260116+00:00\", \n    \"id\": 143464, \n    \"post_id\":
+        125247, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:45 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143465
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:48 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143465/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:45 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143465/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=delt3zeqp7mzbomn7hrjcf2wjcthqcnk; expires=Sat, 14-Mar-2015 03:59:48
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Daniel\", \n    \"author_id\": 1123, \n    \"date\":
+        \"2014-12-30T14:39:21.424288+00:00\", \n    \"id\": 143465, \n    \"post_id\":
+        125248, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:46 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143466
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:49 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143466/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:46 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143466/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:49 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=z301lf8lj8rjo3dc5ssu76gf4pmz2a9l; expires=Sat, 14-Mar-2015 03:59:49
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Daniel\", \n    \"author_id\": 1123, \n    \"date\":
+        \"2014-12-30T14:39:21.877014+00:00\", \n    \"id\": 143466, \n    \"post_id\":
+        125248, \n    \"type\": \"Bookmark\", \n    \"type_id\": 2\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:47 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143467
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:51 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143467/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:49 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143467/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=835k3cc450giwevrderhrc2j9iveaevk; expires=Sat, 14-Mar-2015 03:59:56
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"biolab\", \n    \"author_id\": 9164, \n    \"date\":
+        \"2014-12-30T14:53:40.197239+00:00\", \n    \"id\": 143467, \n    \"post_id\":
+        125243, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:54 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143468
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:57 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143468/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:55 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143468/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:57 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=2a0rgdqeomgt0o8azgzwi8bx2reetmz5; expires=Sat, 14-Mar-2015 03:59:57
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"biolab\", \n    \"author_id\": 9164, \n    \"date\":
+        \"2014-12-30T14:53:43.198465+00:00\", \n    \"id\": 143468, \n    \"post_id\":
+        125236, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:55 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143469
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:58 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143469/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:56 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143469/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=rk7axxvk42ln8avlrvb4p6vhxixhupiw; expires=Sat, 14-Mar-2015 03:59:58
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Daniel\", \n    \"author_id\": 1123, \n    \"date\":
+        \"2014-12-30T15:00:24.202510+00:00\", \n    \"id\": 143469, \n    \"post_id\":
+        124163, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:56 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143470
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 03:59:59 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143470/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:57 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143470/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=wlrrmxandtntf9gd582k2w7nea5o363h; expires=Sat, 14-Mar-2015 04:00:00
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Michael Dondrup\", \n    \"author_id\": 55, \n
+        \   \"date\": \"2014-12-30T15:17:16.741588+00:00\", \n    \"id\": 143470,
+        \n    \"post_id\": 125263, \n    \"type\": \"Upvote\", \n    \"type_id\":
+        0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:58 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143471
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:00 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143471/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:58 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143471/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=mpz22cj0gohm19m77vc1dnnhwo1sb4t9; expires=Sat, 14-Mar-2015 04:00:01
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"YOT\", \n    \"author_id\": 11899, \n    \"date\":
+        \"2014-12-30T15:18:04.130585+00:00\", \n    \"id\": 143471, \n    \"post_id\":
+        123720, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:59 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143472
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:01 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143472/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 03:59:59 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143472/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=mwk643iwtu462uxwhs6osnc9eircggoi; expires=Sat, 14-Mar-2015 04:00:02
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"airan\", \n    \"author_id\": 11984, \n    \"date\":
+        \"2014-12-30T15:42:48.665106+00:00\", \n    \"id\": 143472, \n    \"post_id\":
+        125267, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:00 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143473
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:03 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143473/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:01 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143473/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:04 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=pbb8pp1bsxs6ctdmovqiza6n2w9qgqm3; expires=Sat, 14-Mar-2015 04:00:04
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"wcc957\", \n    \"author_id\": 9318, \n    \"date\":
+        \"2014-12-30T15:55:25.706972+00:00\", \n    \"id\": 143473, \n    \"post_id\":
+        42334, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:02 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143474
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:06 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143474/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:04 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143474/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=d8ak9vcsnxip8cs4dl0k1ikg9ugvh18o; expires=Sat, 14-Mar-2015 04:00:06
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Rm\", \n    \"author_id\": 654, \n    \"date\":
+        \"2014-12-30T15:56:35.809355+00:00\", \n    \"id\": 143474, \n    \"post_id\":
+        69933, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:04 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143475
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:07 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143475/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:05 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143475/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:08 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=lo7fxiiie76bhjw66ueuuw5whldvum5m; expires=Sat, 14-Mar-2015 04:00:08
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Rm\", \n    \"author_id\": 654, \n    \"date\":
+        \"2014-12-30T15:59:36.643048+00:00\", \n    \"id\": 143475, \n    \"post_id\":
+        73537, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:06 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143476
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:09 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143476/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:07 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143476/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:14 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=mblmydum1jl3lgii0vd5pm7cqoh10l4c; expires=Sat, 14-Mar-2015 04:00:14
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"juanma_lace\", \n    \"author_id\": 14169, \n
+        \   \"date\": \"2014-12-30T16:44:11.823497+00:00\", \n    \"id\": 143476,
+        \n    \"post_id\": 125234, \n    \"type\": \"Upvote\", \n    \"type_id\":
+        0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:12 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143477
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:15 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143477/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:13 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143477/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:15 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=4nyp1wh9edsyion7g75k7jtcmq3xh5oj; expires=Sat, 14-Mar-2015 04:00:15
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"RamRS\", \n    \"author_id\": 8494, \n    \"date\":
+        \"2014-12-30T16:53:26.509076+00:00\", \n    \"id\": 143477, \n    \"post_id\":
+        296, \n    \"type\": \"Bookmark\", \n    \"type_id\": 2\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:13 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143478
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:16 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143478/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:13 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143478/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:16 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=nvercvqdqxogute0m1nie1mmc03hz716; expires=Sat, 14-Mar-2015 04:00:16
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Asaf\", \n    \"author_id\": 1767, \n    \"date\":
+        \"2014-12-30T17:01:26.049536+00:00\", \n    \"id\": 143478, \n    \"post_id\":
+        125282, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:14 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143479
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:16 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143479/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:14 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143479/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:17 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=3kjzcm3fagd7evzrnj7cqh3gcw763knx; expires=Sat, 14-Mar-2015 04:00:17
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T17:02:27.225065+00:00\", \n    \"id\": 143479, \n    \"post_id\":
+        123752, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:15 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143481
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:17 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143481/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:15 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143481/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=ch9qrgvhtfsoneg2in8iwpe3fkup558n; expires=Sat, 14-Mar-2015 04:00:18
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"grayapply2009\", \n    \"author_id\": 15248, \n
+        \   \"date\": \"2014-12-30T17:04:28.231502+00:00\", \n    \"id\": 143481,
+        \n    \"post_id\": 125273, \n    \"type\": \"Upvote\", \n    \"type_id\":
+        0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:15 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143482
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:18 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143482/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:16 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143482/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=q9rc6rn847fereqqdy6qbhwetc6z6ghj; expires=Sat, 14-Mar-2015 04:00:18
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"grayapply2009\", \n    \"author_id\": 15248, \n
+        \   \"date\": \"2014-12-30T17:04:34.278408+00:00\", \n    \"id\": 143482,
+        \n    \"post_id\": 125257, \n    \"type\": \"Upvote\", \n    \"type_id\":
+        0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:16 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143484
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:19 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143484/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:17 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143484/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=00nd05wg0triwoyr7pfvcqoh2y18h97a; expires=Sat, 14-Mar-2015 04:00:19
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T17:12:47.019824+00:00\", \n    \"id\": 143484, \n    \"post_id\":
+        125267, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:17 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:20 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143485/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:18 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143485/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=kl2i50fsuj976zigjo3y8umh5uregfp3; expires=Sat, 14-Mar-2015 04:00:20
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T17:13:46.234007+00:00\", \n    \"id\": 143485, \n    \"post_id\":
+        125264, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:18 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143486
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:20 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143486/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:18 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143486/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=gwou5rkz7fj4spd149w43wu2isinbjur; expires=Sat, 14-Mar-2015 04:00:21
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"SES\", \n    \"author_id\": 3923, \n    \"date\":
+        \"2014-12-30T17:13:58.777502+00:00\", \n    \"id\": 143486, \n    \"post_id\":
+        125272, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:19 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143487
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:21 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143487/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:19 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143487/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=3oggfdare3hvt8llethbjsxckxsp258g; expires=Sat, 14-Mar-2015 04:00:22
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T17:18:56.975908+00:00\", \n    \"id\": 143487, \n    \"post_id\":
+        45836, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:20 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143488
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:22 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143488/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:20 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143488/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=2nuvoq56pt58guvpicgen0o1hj7m4ynf; expires=Sat, 14-Mar-2015 04:00:23
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T17:21:30.991384+00:00\", \n    \"id\": 143488, \n    \"post_id\":
+        125215, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:21 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143489
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:23 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143489/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:21 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143489/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=t88bpsvu2tdka97ujxrvjulhfeoyihp9; expires=Sat, 14-Mar-2015 04:00:23
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T17:40:45.628756+00:00\", \n    \"id\": 143489, \n    \"post_id\":
+        125090, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:21 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143490
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:24 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143490/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:22 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143490/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:24 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=t29z6q6yyozy5buxf5ytjicfvbmfn8hl; expires=Sat, 14-Mar-2015 04:00:24
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T17:44:45.583418+00:00\", \n    \"id\": 143490, \n    \"post_id\":
+        125057, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:22 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143491
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:25 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143491/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:23 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143491/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=zlbekwsr06o08i9ifp4l9u9ro6gyzp6h; expires=Sat, 14-Mar-2015 04:00:25
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Devon Ryan\", \n    \"author_id\": 7403, \n    \"date\":
+        \"2014-12-30T17:56:20.072377+00:00\", \n    \"id\": 143491, \n    \"post_id\":
+        125288, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:23 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143492
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:25 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143492/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:23 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143492/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=o69b8yt801l2fjxhq9k8g8sylsjfvg31; expires=Sat, 14-Mar-2015 04:00:26
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Mitch Skinner\", \n    \"author_id\": 509, \n
+        \   \"date\": \"2014-12-30T18:03:14.303791+00:00\", \n    \"id\": 143492,
+        \n    \"post_id\": 125272, \n    \"type\": \"Upvote\", \n    \"type_id\":
+        0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:24 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143493
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:26 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143493/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:24 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143493/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:27 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=20qo9hfd4trgqfq8xlgsdv5a8qs8yci5; expires=Sat, 14-Mar-2015 04:00:27
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T18:11:00.409525+00:00\", \n    \"id\": 143493, \n    \"post_id\":
+        91261, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:25 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143494
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:27 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143494/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:25 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143494/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:28 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=1qwvjmvmapv5uh3g8crf5az7zwv2s7dx; expires=Sat, 14-Mar-2015 04:00:28
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Asaf\", \n    \"author_id\": 1767, \n    \"date\":
+        \"2014-12-30T18:11:19.518023+00:00\", \n    \"id\": 143494, \n    \"post_id\":
+        125286, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:25 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143495
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:28 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143495/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:26 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143495/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:28 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=nfqwsxf6pajgl9kotd182zxiex51g9ob; expires=Sat, 14-Mar-2015 04:00:28
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Alex Reynolds\", \n    \"author_id\": 20, \n    \"date\":
+        \"2014-12-30T18:21:56.730905+00:00\", \n    \"id\": 143495, \n    \"post_id\":
+        125282, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:26 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143496
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:29 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143496/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:27 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143496/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=eivdpev6zf4btnuijt0itn7aw7xvkta9; expires=Sat, 14-Mar-2015 04:00:29
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T18:24:48.193454+00:00\", \n    \"id\": 143496, \n    \"post_id\":
+        123720, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:27 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143497
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:30 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143497/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:27 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143497/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:30 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=qm7pcxanzo36dgderq7jzounzw08ydx7; expires=Sat, 14-Mar-2015 04:00:30
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bioinfosm\", \n    \"author_id\": 475, \n    \"date\":
+        \"2014-12-30T18:33:56.230897+00:00\", \n    \"id\": 143497, \n    \"post_id\":
+        63019, \n    \"type\": \"Accept\", \n    \"type_id\": 3\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:28 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143498
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:30 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143498/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:28 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143498/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=uikx3rvo7icc4ehomea4u9vlmem87bt3; expires=Sat, 14-Mar-2015 04:00:31
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bioinfosm\", \n    \"author_id\": 475, \n    \"date\":
+        \"2014-12-30T18:34:34.652083+00:00\", \n    \"id\": 143498, \n    \"post_id\":
+        63088, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:29 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143499
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:31 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143499/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:29 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143499/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=5b3r04rnjosyyln90i6s4ta35fgox46e; expires=Sat, 14-Mar-2015 04:00:32
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T18:46:46.816096+00:00\", \n    \"id\": 143499, \n    \"post_id\":
+        75362, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:30 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143501
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:32 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143501/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:30 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143501/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=bhfu9s7ulxxgo4609ws2prrajfixek3g; expires=Sat, 14-Mar-2015 04:00:33
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T18:54:26.003753+00:00\", \n    \"id\": 143501, \n    \"post_id\":
+        15994, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:30 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143502
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:33 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143502/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:31 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143502/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=qaxrubqsel6lve4u89yzmb7tec3pkxyw; expires=Sat, 14-Mar-2015 04:00:33
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T18:55:53.048359+00:00\", \n    \"id\": 143502, \n    \"post_id\":
+        63028, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:31 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143503
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:34 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143503/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:32 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143503/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:34 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=12cl0l5977h9vack0ymsipp0wfx7n5ih; expires=Sat, 14-Mar-2015 04:00:34
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T18:58:54.351435+00:00\", \n    \"id\": 143503, \n    \"post_id\":
+        125295, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:32 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143504
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:35 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143504/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:32 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143504/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=7xj75l0862gs5j2i408b7zr9b9ru07c7; expires=Sat, 14-Mar-2015 04:00:35
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Alex\", \n    \"author_id\": 124, \n    \"date\":
+        \"2014-12-30T19:08:15.849852+00:00\", \n    \"id\": 143504, \n    \"post_id\":
+        11289, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:33 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143506
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:35 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143506/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:33 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143506/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=xrvffd4u2uflbjuwmjvv2vsytvjluftd; expires=Sat, 14-Mar-2015 04:00:36
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T19:08:30.567158+00:00\", \n    \"id\": 143506, \n    \"post_id\":
+        84704, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:34 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143507
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:36 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143507/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:34 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143507/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=peozhnwk3o9j2dn5df1zkxi937t6ycmg; expires=Sat, 14-Mar-2015 04:00:37
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T19:10:28.930669+00:00\", \n    \"id\": 143507, \n    \"post_id\":
+        84709, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:34 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143508
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:37 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143508/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:35 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143508/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=hvtaudveo3c8lji765kcoghgrftwc1i7; expires=Sat, 14-Mar-2015 04:00:37
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T19:11:35.733276+00:00\", \n    \"id\": 143508, \n    \"post_id\":
+        84705, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:35 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143509
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:38 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143509/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:36 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143509/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=hx58hnmk2xi0laob84vbkjoy98o7q7at; expires=Sat, 14-Mar-2015 04:00:38
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"zx8754\", \n    \"author_id\": 3919, \n    \"date\":
+        \"2014-12-30T19:18:59.042469+00:00\", \n    \"id\": 143509, \n    \"post_id\":
+        125272, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:36 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143510
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:39 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143510/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:36 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143510/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:39 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=y7z5dj2sqwimj1bgaz8azws2l6fzubxo; expires=Sat, 14-Mar-2015 04:00:39
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"zx8754\", \n    \"author_id\": 3919, \n    \"date\":
+        \"2014-12-30T19:19:07.530017+00:00\", \n    \"id\": 143510, \n    \"post_id\":
+        125227, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:37 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143511
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:39 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143511/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:37 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143511/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:40 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=wg7xv2191hkcsmdrv3ryse4f4apczlfl; expires=Sat, 14-Mar-2015 04:00:40
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"zx8754\", \n    \"author_id\": 3919, \n    \"date\":
+        \"2014-12-30T19:19:08.952738+00:00\", \n    \"id\": 143511, \n    \"post_id\":
+        125292, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:38 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143512
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:40 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143512/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:38 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143512/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=3pachetsssduvwzfzsl0z38fi3scxpyr; expires=Sat, 14-Mar-2015 04:00:41
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"zx8754\", \n    \"author_id\": 3919, \n    \"date\":
+        \"2014-12-30T19:20:09.468398+00:00\", \n    \"id\": 143512, \n    \"post_id\":
+        115705, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:38 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143513
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:41 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143513/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:39 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143513/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=mkyn1ma4t6tnrnfyx5oqogm74kcempwq; expires=Sat, 14-Mar-2015 04:00:41
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"zx8754\", \n    \"author_id\": 3919, \n    \"date\":
+        \"2014-12-30T19:20:25.466498+00:00\", \n    \"id\": 143513, \n    \"post_id\":
+        115710, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:39 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143514
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:42 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143514/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:40 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143514/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:42 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=rawmnui6t5eex0zqn46hk21zwwt0o3sb; expires=Sat, 14-Mar-2015 04:00:42
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"zx8754\", \n    \"author_id\": 3919, \n    \"date\":
+        \"2014-12-30T19:20:50.147737+00:00\", \n    \"id\": 143514, \n    \"post_id\":
+        125263, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:40 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143515
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:43 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143515/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:40 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143515/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:43 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=4uvp01v8cc5d6p5pz47sk472eglhjhlo; expires=Sat, 14-Mar-2015 04:00:43
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"zx8754\", \n    \"author_id\": 3919, \n    \"date\":
+        \"2014-12-30T19:20:56.376258+00:00\", \n    \"id\": 143515, \n    \"post_id\":
+        124766, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:41 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143516
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:43 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143516/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:41 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143516/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=1q7oebu01pf6s24r2pigkevpyra4syzq; expires=Sat, 14-Mar-2015 04:00:44
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T19:27:51.407943+00:00\", \n    \"id\": 143516, \n    \"post_id\":
+        6163, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:42 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143518
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:44 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143518/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:42 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143518/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=s1mrt68mnafzqf4n87unfppb9p63d7ml; expires=Sat, 14-Mar-2015 04:00:45
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"ngsgene\", \n    \"author_id\": 1127, \n    \"date\":
+        \"2014-12-30T19:29:13.875750+00:00\", \n    \"id\": 143518, \n    \"post_id\":
+        125173, \n    \"type\": \"Accept\", \n    \"type_id\": 3\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:43 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143520
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:45 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143520/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:43 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143520/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=j5wkym1cbbz0ov6sbqqic0ud6023crtt; expires=Sat, 14-Mar-2015 04:00:45
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Bara'a\", \n    \"author_id\": 10135, \n    \"date\":
+        \"2014-12-30T19:34:22.299584+00:00\", \n    \"id\": 143520, \n    \"post_id\":
+        6163, \n    \"type\": \"Bookmark\", \n    \"type_id\": 2\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:43 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143521
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:46 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143521/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:44 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143521/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:46 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=k57q1izi6v47ggd2w4studfyoxtq61r5; expires=Sat, 14-Mar-2015 04:00:46
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"ashkot09\", \n    \"author_id\": 5381, \n    \"date\":
+        \"2014-12-30T20:07:24.225219+00:00\", \n    \"id\": 143521, \n    \"post_id\":
+        125299, \n    \"type\": \"Accept\", \n    \"type_id\": 3\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:44 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143522
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:47 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143522/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:45 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143522/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:47 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=l3sqe7vsgm9o538agjlqn90fgmihejtx; expires=Sat, 14-Mar-2015 04:00:47
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Pierre Lindenbaum\", \n    \"author_id\": 30,
+        \n    \"date\": \"2014-12-30T20:44:34.106113+00:00\", \n    \"id\": 143522,
+        \n    \"post_id\": 125299, \n    \"type\": \"Upvote\", \n    \"type_id\":
+        0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:45 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143523
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:48 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143523/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:45 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143523/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=cb7tacvsu8d3nci6njznbib4v8qa144b; expires=Sat, 14-Mar-2015 04:00:48
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"karl.stamm\", \n    \"author_id\": 8857, \n    \"date\":
+        \"2014-12-30T20:53:31.321153+00:00\", \n    \"id\": 143523, \n    \"post_id\":
+        115979, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:46 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143524
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:48 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143524/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:46 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143524/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:49 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=hwid1zwqv3dku5bg9mqbpezrxmgydu4b; expires=Sat, 14-Mar-2015 04:00:49
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Devon Ryan\", \n    \"author_id\": 7403, \n    \"date\":
+        \"2014-12-30T21:27:10.116560+00:00\", \n    \"id\": 143524, \n    \"post_id\":
+        125305, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:47 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143525
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:49 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143525/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:47 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143525/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:50 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=gaamrfq3swn7n2oytha8wykgwb06hqhp; expires=Sat, 14-Mar-2015 04:00:50
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Manvendra Singh\", \n    \"author_id\": 8687,
+        \n    \"date\": \"2014-12-30T21:45:01.530566+00:00\", \n    \"id\": 143525,
+        \n    \"post_id\": 125275, \n    \"type\": \"Upvote\", \n    \"type_id\":
+        0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:48 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143526
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:50 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143526/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:48 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143526/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:50 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=k0ph2iydc9e00wcxd5y7sp5tgf968yfs; expires=Sat, 14-Mar-2015 04:00:50
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Varun Gupta\", \n    \"author_id\": 2564, \n    \"date\":
+        \"2014-12-30T22:13:19.841094+00:00\", \n    \"id\": 143526, \n    \"post_id\":
+        81853, \n    \"type\": \"Bookmark\", \n    \"type_id\": 2\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:48 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143527
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:51 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143527/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:49 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143527/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=mutumfy4kcmf0iniuv62dda0dtgqo804; expires=Sat, 14-Mar-2015 04:00:51
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Josh Herr\", \n    \"author_id\": 1704, \n    \"date\":
+        \"2014-12-30T23:13:17.148508+00:00\", \n    \"id\": 143527, \n    \"post_id\":
+        15002, \n    \"type\": \"Bookmark\", \n    \"type_id\": 2\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:49 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143529
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:52 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143529/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:50 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143529/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=uiz1ftmnuso8bnwtznv4mge4ho8smjr5; expires=Sat, 14-Mar-2015 04:00:52
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Josh Herr\", \n    \"author_id\": 1704, \n    \"date\":
+        \"2014-12-31T00:29:53.430010+00:00\", \n    \"id\": 143529, \n    \"post_id\":
+        42272, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:50 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143532
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:52 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143532/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:50 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143532/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:53 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=qsbb6rrlaigdr7sijlkb6x30c0rns5ed; expires=Sat, 14-Mar-2015 04:00:53
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Parham\", \n    \"author_id\": 11991, \n    \"date\":
+        \"2014-12-31T02:05:42.638478+00:00\", \n    \"id\": 143532, \n    \"post_id\":
+        125327, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:51 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143533
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:53 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143533/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:51 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143533/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=kupljuteehlovhmoa4e7d8hsyj0ar0iu; expires=Sat, 14-Mar-2015 04:00:54
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Siva\", \n    \"author_id\": 14486, \n    \"date\":
+        \"2014-12-31T03:54:48.759978+00:00\", \n    \"id\": 143533, \n    \"post_id\":
+        125322, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:52 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143534
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: MOVED PERMANENTLY
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:54 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      Location:
+      - https://www.biostars.org/api/vote/143534/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:52 GMT
+- request:
+    method: get
+    uri: https://www.biostars.org/api/vote/143534/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 28 Feb 2015 04:00:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - biostar2=4yqlqo0ihy5amnqmqe55bq53z4opkd4w; expires=Sat, 14-Mar-2015 04:00:54
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n    \"author\": \"Siva\", \n    \"author_id\": 14486, \n    \"date\":
+        \"2014-12-31T03:55:04.606511+00:00\", \n    \"id\": 143534, \n    \"post_id\":
+        125267, \n    \"type\": \"Upvote\", \n    \"type_id\": 0\n}"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 04:00:52 GMT
+recorded_with: VCR 2.9.3

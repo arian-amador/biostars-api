@@ -1,8 +1,8 @@
 module Biostars
-	module API
-		class Post
+  module API
+    class Post
 
-			# @return [Fixnum] number of answers.
+      # @return [Fixnum] number of answers.
       attr_reader :answer_count
 
       # @return [String] author name.
@@ -57,10 +57,10 @@ module Biostars
       attr_reader :tag_val
 
       # @return [Fixnum] thread's score.
-			attr_reader :thread_score
+      attr_reader :thread_score
 
       # @return [String] title.
-			attr_reader :title
+      attr_reader :title
 
       # @return [String] type of post.
       attr_reader :type
@@ -79,12 +79,11 @@ module Biostars
 
       # @return [String] content.
       attr_reader :xhtml
-      
-			def initialize(attributes)
-				attributes.each do |k,v| 
-					instance_variable_set("@#{k}", v) unless v.nil?
-				end
+            def initialize(attributes)
+			attributes.each do |k,v| 
+				instance_variable_set("@#{k}", v) unless v.nil?
 			end
+		end
 			
 			# Finds post with the given id.
 			#
@@ -92,7 +91,8 @@ module Biostars
 			# @return [Post] returns Post object.
 			# @raise [Biostars::PostError] if Post is not found.
 	  	def self.find(id)
-	  		Biostars::API.get("post/#{id}", self, Biostars::PostError)
+	  		attributes = Biostars::API.get "post/#{id}"
+	  		attributes ? new(attributes) : raise(Biostars::PostError)
 	  	end
 		end
 	end

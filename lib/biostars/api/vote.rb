@@ -35,7 +35,8 @@ module Biostars
 			# @return [Vote] returns Vote object.
 			# @raise [Biostars::VoteError] if the Vote is not found.
 			def self.find(id)
-				Biostars::API.get("vote/#{id}", self, Biostars::VoteError)
+				attributes = Biostars::API.get "vote/#{id}" 
+				attributes ? new(attributes) : raise(Biostars::VoteError)
 	  	end
 		end
 	end

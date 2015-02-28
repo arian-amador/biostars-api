@@ -31,7 +31,8 @@ module Biostars
 			# @return [User] returns User object.
 			# @raise [Biostars::UserError] if User is not found.
 			def self.find(id)
-				Biostars::API.get("user/#{id}", self, Biostars::UserError)
+				attributes = Biostars::API.get "user/#{id}"
+				attributes ? new(attributes) : raise(Biostars::UserError)
 			end
 		end
 	end

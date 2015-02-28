@@ -9,7 +9,7 @@ class TestBiostarsUser < Minitest::Test
 		end
 
 		should 'return a user object' do
-			VCR.use_cassette('user_data') do
+			VCR.use_cassette('user_find') do
 				user = Biostars::API::User.find(23)
 
 				assert_equal 23, user.id

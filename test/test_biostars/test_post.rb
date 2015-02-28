@@ -9,7 +9,7 @@ class TestBiostarsPost < Minitest::Test
 		end
 
 		should 'return a post' do
-			VCR.use_cassette('post_data') do
+			VCR.use_cassette('post_find') do
 				post = Biostars::API::Post.find 25
 
 				assert_equal 25, post.id

@@ -9,7 +9,7 @@ class TestBiostarsVote < Minitest::Test
 		end
 
 		should 'return a vote' do
-			VCR.use_cassette('vote_data') do
+			VCR.use_cassette('vote_find') do
 				vote = Biostars::API::Vote.find 21
 
 				assert_equal 21, vote.id
