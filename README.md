@@ -54,10 +54,10 @@ latest_votes = latest_info.all_votes
 ## Documentation
 
 * API - https://www.biostars.org/info/api/
-* Rubydoc - http://www.rubydoc.info/github/arian-amador/biostars-api/Contributing
+* Rubydoc - http://www.rubydoc.info/github/arian-amador/biostars-api/master
 * GitHub - https://github.com/arian-amador/biostars-api/
 
-## master
+## Contributing
 
 1. Fork it ( https://github.com/arian-amador/biostars-api/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
