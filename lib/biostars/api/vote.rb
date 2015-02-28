@@ -2,7 +2,26 @@ module Biostars
 	module API
 		class Vote
 
-			attr_reader :author, :author_id, :date, :id, :post_id, :type, :type_id
+			# @return [String] author name.
+			attr_reader :author
+
+			# @return [Fixnum] author's identifier, a number.
+			attr_reader :author_id
+
+			# @return [String] date of the vote, ISO 8601 format.
+			attr_reader :date
+
+			# @return [Fixnum] identifier of the vote, a number.
+			attr_reader :id
+
+			# @return [Fixnum] identifier of the voted post.
+			attr_reader :post_id
+
+			# @return [String] type of vote.
+			attr_reader :type
+
+			# @return [Fixnum] type's identifier for this vote.
+			attr_reader :type_id
 
 			def initialize(attributes)
 				attributes.each do |k,v| 
@@ -10,6 +29,11 @@ module Biostars
 				end
 			end
 
+			# Finds vote with the given id.
+			#
+			# @param id [Fixnum] vote id.
+			# @return [Vote] returns Vote object.
+			# @raise [Biostars::VoteError] if the Vote is not found.
 			def self.find(id)
 				Biostars::API.get("vote/#{id}", self, Biostars::VoteError)
 	  	end
